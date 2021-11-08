@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  <title>Veronika Vikentyeva</title>
+</head>
+<body>
+
+<!-- Sprite-->
+<svg display="none">
+  <symbol id="github" viewBox="0 0 496 512">
+    <g>
+      <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+    </g>
+  </symbol>
+
+  <symbol id="telegram" viewBox="0 0 496 512">
+    <g>
+      <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+    </g>
+  </symbol>
+
+  <symbol id="gmail" viewBox="0 0 48 48">
+    <g>
+      <path d="M24 0C10.7452 0 0 10.7452 0 24C0 37.2548 10.7452 48 24 48C37.2548 48 48 37.2548 48 24C48 10.7452 37.2548 0 24 0ZM23.9639 26.0193L14.9987 19.5115V33.23H13.5009C12.6664 33.23 12.0031 32.5667 12.0031 31.7322V16.562C12.0031 16.4985 12.007 16.4389 12.0144 16.3831C12.0416 16.1451 12.1284 15.9122 12.2813 15.7061C12.7734 15.0428 13.7363 14.893 14.421 15.3851L23.9853 22.3391L33.6138 15.2996C34.2771 14.8074 35.2186 14.9572 35.7107 15.6419C35.9723 15.9945 36.0525 16.4256 35.9674 16.8261V31.7536C35.9674 32.5667 35.3041 33.23 34.4697 33.23H32.9719V19.4788L23.9639 26.0193Z"></path>
+    </g>
+  </symbol>
+</svg>
+
+
+<svg id="crt-bg-shape-1" class="hidden-sm hidden-xs" height="519" width="758">
+  <polygon class="pol" points="0,455,693,352,173,0,92,0,0,71"></polygon>
+</svg>
+
+<svg id="crt-bg-shape-2" class="hidden-sm hidden-xs" height="536" width="633">
+  <polygon points="0,0,633,0,633,536"></polygon>
+</svg>
+
+
+<div class="wrapper">
+
+  <header class="header" id="header">
+    <div class="header__container _container">
+      <div class="header__inner">
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li class="nav__li"><a class="nav__link" data-scroll="#about" href="#">обо мне</a><li>
+            <li class="nav__li"><a class="nav__link" data-scroll="#skills" href="#">навыки</a><li>
+            <li class="nav__li"><a class="nav__link" data-scroll="#experience" href="#">опыт</a><li>
+            <li class="nav__li"><a class="nav__link" data-scroll="#portfolio" href="#">портфолио</a><li>
+            <li class="nav__li"><a class="nav__link" data-scroll="#contacts" href="#">контакты</a><li>
+          </ul>
+        </nav>
+        <div class="header__burger">
+          <span></span>
+        </div>
+      </div>
+
+    </div><!--/container-->
+  </header>
+
+  <main class="main">
+    <div class="_container flex">
+
+
+     <aside class="sidebar" id="sidebar">
+      <div class="sidebar__content">
+
+      <img class="sidebar__img" src="images/me.png" alt="my photo">
+        <div class="sidebar__flex">
+      <h2 class="sidebar__title">Вероника Викентьева</h2>
+      <p class="sidebar__text">Фронтенд разработчик</p>
+      <ul class="sidebar__socials">
+        <li class="sidebar__li"><a class="sidebar__link" href="https://github.com/nikavikentyeva" target="_blank">
+          <svg class="sidebar__icon">
+            <use xlink:href="#github"></use>
+          </svg>
+        </a></li>
+
+        <li class="sidebar__li"><a class="sidebar__link" href="https://t.me/nikavikentyeva" target="_blank">
+          <svg class="sidebar__icon">
+            <use xlink:href="#telegram"></use>
+          </svg>
+        </a></li>
+
+        <li class="sidebar__li"><a class="sidebar__link" href="mailto:nika.vikentyeva@gmail.com" target="_blank">
+          <svg class="sidebar__icon">
+            <use xlink:href="#gmail"></use>
+          </svg>
+        </a></li>
+
+      </ul>
+        </div>
+      </div>
+    <div class="sidebar__download">
+      <button class="sidebar__btn">скачать резюме</button>
+    </div>
+    </aside>
+
+     <div class="content">
+
+      <section class="about _section">
+
+        <h1 class="about__title _title">Oбо мне</h1>
+        <p><b>Меня зовут Вероника Викентьева.</b></p>
+        <p class="about__text">С 2020 года я увлекаюсь вёрсткой и созданием сайтов. А в 2021 году я чётко решила, что хочу развиваться профессионально в сфере web-разработки.</p>
+        <p class="about__text">После окончания университета моё хобби стало перерастать в работу, я начала работать в IT-компании на позиции верстальщика. Работая, я не переставала учиться и получила необходимые мне в работе навыки.</p>
+        <p>Однако, мне есть еще куда стремиться. Моя цель - продолжать развиваться, обучаться новым технологиям и применять их в своих проектах.</p>
+
+        <hr class="about__line">
+
+
+        <div class="about__personal" id="about__personal">
+          <div class="personal__information">
+            <h2 class="personal__title">Личная информация</h2>
+            <dl class="personal__dl-horizontal clear-mrg">
+              <dt class="personal__text-upper">город</dt>
+              <dd>Москва</dd>
+              <dt class="personal__text-upper">дата рождения</dt>
+              <dd>16.08.1999</dd>
+              <dt class="personal__text-upper">образование</dt>
+              <dd>МГЛУ (бывш. МГПИИЯ им. Мориса Тореза), степень бакалавра, 2017-2021</dd>
+              <dt class="personal__text-upper">e-mail</dt>
+              <dd><a class="personal__link" href="mailto:nika.vikentyeva@gmail.com" target="_blank">nika.vikentyeva@gmail.com</a></dd>
+            </dl>
+          </div>
+
+
+          <div class="personal__lang">
+            <h2 class="personal__title">Языки</h2>
+            <div class="personal__progress crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+              <strong class="progress-title">Русский</strong>
+              <span class="progress-bar">
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+              </span>
+            </div>
+
+            <div class="personal__progress crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+              <strong class="progress-title">Французский</strong>
+              <span class="progress-bar">
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+              </span>
+            </div>
+
+            <div class="personal__progress crt-animate" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="10">
+              <strong class="progress-title">Английский</strong>
+              <span class="progress-bar">
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="progress-bar__fill bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+                <span class="bullet"></span>
+              </span>
+            </div>
+          </div>
+
+
+        </div>
+      </section>     <!--/about section-->
+
+
+
+
+      <section class="skills _section" id="skills">
+        <h1 class="skills__title _title">Навыки</h1>
+
+        <div class="skills__progress-container">
+          <h3 class="skills__subtitle">HTML5</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 85%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">CSS3</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 80%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">JavaScript</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 35%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">Адаптивная вёрстка</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 70%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">Flexbox\Grid</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 80%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">Figma</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 90%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">БЭМ</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 80%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">SCSS/Sass</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 25%"></span>
+          </div>
+
+          <h3 class="skills__subtitle">Git</h3>
+          <div class="skills__progress-bar">
+            <span style="width: 30%"></span>
+          </div>
+        </div>
+
+      </section> <!--/skills section-->
+
+
+      <section class="experience _section" id="experience">
+        <h1 class="experience__title _title">Опыт работы</h1>
+        <div class="experience__content">
+          <time class="experience__data" datetime="2021-06T2021-11">
+            <span>Июнь <b>2021</b> - Ноябрь <b>2021</b></span>
+          </time>
+
+          <div class="experience__item">
+            <h3 class="experience__subtitle">Верстальщик</h3>
+            <p class="experience__company">spacetab.io</p>
+            <p class="experience__text">На данный момент имею опыт в вёрстке и базовой подготовке макетов для бэкенда. В частности, верстала адаптивные лендинги и корпоративные личные кабинеты для заказчиков компании, а также выполняла верстку более мелких задач таких как email-письма и отчёты для генерации PDF-файлов.</p>
+            <p>Подготавливая свою работу для бэкенда, я разбиваю макет на составляющие для шаблонизатора, делаю интеграцию JavaScript/jQuery-библиотек и всячески участвую в дальнейшей доработке продукта до конца.</p>
+          </div>
+
+
+        </div>
+
+      </section> <!--/experience section-->
+
+      <section class="portfolio _section" id="portfolio">
+        <h1 class="portfolio__title _title">портфолио</h1>
+        <div class="portfolio__container">
+          <div class="portfolio__item">
+            <div class="portfolio__content">
+              <img class="portfolio__img" src="images/portfolio/brandname.png" alt="brandName">
+              <div class="portfolio__btns">
+                <a class="portfolio__btn" href="#">Demo</a>
+                <a class="portfolio__btn" href="https://github.com/nikavikentyeva/brandName" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <div class="portfolio__content">
+              <img class="portfolio__img" src="images/portfolio/ojjo.png" alt="ojjo">
+              <div class="portfolio__btns">
+                <a class="portfolio__btn" href="#">Demo</a>
+                <a class="portfolio__btn" href="https://github.com/nikavikentyeva/ojjo" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <div class="portfolio__content">
+              <img class="portfolio__img" src="images/portfolio/newbody.png" alt="newbody">
+              <div class="portfolio__btns">
+                <a class="portfolio__btn" href="#">Demo</a>
+                <a class="portfolio__btn" href="https://github.com/nikavikentyeva/newbody" target="_blank">Github</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <div class="portfolio__content">
+              <img class="portfolio__img" src="images/portfolio/mail.png" alt="">
+              <div class="portfolio__btns">
+                <a class="portfolio__btn" href="#">Demo</a>
+                <a class="portfolio__btn" href="https://github.com/nikavikentyeva/email">Github</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> <!--/portfolio section-->
+
+      <section class="contact _section" id="contacts">
+        <h1 class="contact__title _title">Контакты</h1>
+        <div class="contact__container">
+          <div class="contact__item">почта: <a class="contact__link" href="mailto:nika.vikentyeva@gmail.com" target="_blank">nika.vikentyeva@gmail.com</a></div>
+          <div class="contact__item">telegram: <a class="contact__link" href="https://t.me/nikavikentyeva" target="_blank">@nikavikentyeva</a></div>
+
+        </div>
+
+      </section> <!--/contact section-->
+    </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container _container">
+        <div class="footer__copyright">Veronika Vikentyeva resume @ All Rights Reserved 2021</div>
+    </div>
+  </footer>
+</div> <!--/wrapper-->
+<script src="script.js"></script>
+</body>
+</html>
