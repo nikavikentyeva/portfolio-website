@@ -63,30 +63,17 @@ function scrollFunction() {
 
 /* Click to portfolio */
 
-// const portfolioContents = document.querySelectorAll(".portfolio__content");
-// const parent = document.querySelectorAll(".portfolio__item")
-// for (let i = 0; i < portfolioContents.length; i++) {
-//     const portfolioContent = portfolioContents[i];
-//     portfolioContent.addEventListener("click",function (e){
-//         portfolioContent.classList.add("clicked");
-//     });
-//     document.addEventListener("click"),function (e) {
-//         if (!(document.event.target))close(parent.length); {
-//             portfolioContent.classList.remove ("clicked");
-//         }
-//     e.stopPropagation();
-//     }
-// }
-// const portfolioContents = document.querySelectorAll(".portfolio__content");
+const portfolioContents = document.querySelectorAll(".portfolio__content");
 
-$(".portfolio__content").each,function () {
-    $(".portfolio__content").click(function () {
-        $('.portfolio__content').addClass("clicked");
-    });
-    $(document).on('click', function (e) {
-        if (!$(e.target).closest(".portfolio__item").length) {
-            $('.portfolio__content').removeClass("clicked");
-        }
-        e.stopPropagation();
+for (let portfolioContent of portfolioContents) {
+    portfolioContent.addEventListener("click", function () {
+        portfolioContent.classList.add("clicked");
     });
 }
+
+window.addEventListener("click", function (event) {
+    event.stopPropagation();
+    for (let portfolioContent of portfolioContents) {
+        portfolioContent.classList.remove("clicked");
+    }
+});
