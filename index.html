@@ -108,7 +108,7 @@
 
      <div class="content">
 
-      <section class="about _section">
+      <section class="about _section" id="about">
 
         <h1 class="about__title _title">Oбо мне</h1>
         <p><b>Меня зовут Вероника Викентьева.</b></p>
@@ -185,8 +185,6 @@
               </span>
             </div>
           </div>
-
-
         </div>
       </section>     <!--/about section-->
 
@@ -195,53 +193,82 @@
 
       <section class="skills _section" id="skills">
         <h1 class="skills__title _title">Навыки</h1>
-
         <div class="skills__progress-container">
-          <h3 class="skills__subtitle">HTML5</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 85%"></span>
+
+          <div class="skills__hard _skill">Hard skills</div>
+            <h3 class="skills__subtitle">HTML5</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 85%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">CSS3</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 80%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">JavaScript</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 35%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Адаптивная вёрстка</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 70%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Flexbox/Grid</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 80%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Figma</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 90%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">БЭМ</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 80%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">SCSS/Sass</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 25%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Git</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 30%"></span>
+            </div>
+
+
+          <div class="skills__soft _skill">Soft skills</div>
+            <h3 class="skills__subtitle">Нацеленность на результат</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 100%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Желание и умение работать в команде</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 90%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Быстрая обучаемость</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 85%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Желание развиваться, учиться</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 90%"></span>
+            </div>
+
+            <h3 class="skills__subtitle">Коммуникабельность</h3>
+            <div class="skills__progress-bar">
+              <span style="width: 70%"></span>
+            </div>
           </div>
 
-          <h3 class="skills__subtitle">CSS3</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 80%"></span>
-          </div>
-
-          <h3 class="skills__subtitle">JavaScript</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 35%"></span>
-          </div>
-
-          <h3 class="skills__subtitle">Адаптивная вёрстка</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 70%"></span>
-          </div>
-
-          <h3 class="skills__subtitle">Flexbox\Grid</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 80%"></span>
-          </div>
-
-          <h3 class="skills__subtitle">Figma</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 90%"></span>
-          </div>
-
-          <h3 class="skills__subtitle">БЭМ</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 80%"></span>
-          </div>
-
-          <h3 class="skills__subtitle">SCSS/Sass</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 25%"></span>
-          </div>
-
-          <h3 class="skills__subtitle">Git</h3>
-          <div class="skills__progress-bar">
-            <span style="width: 30%"></span>
-          </div>
-        </div>
 
       </section> <!--/skills section-->
 
@@ -250,14 +277,15 @@
         <h1 class="experience__title _title">Опыт работы</h1>
         <div class="experience__content">
           <time class="experience__data" datetime="2021-06T2021-11">
-            <span>Июнь <b>2021</b> - Ноябрь <b>2021</b></span>
+<!--            <span>Июнь <b>2021</b> - по настоящее время</span>-->
+            <span>Июнь <b>2021</b> - по наст. время</span>
           </time>
 
           <div class="experience__item">
             <h3 class="experience__subtitle">Верстальщик</h3>
             <p class="experience__company">spacetab.io</p>
-            <p class="experience__text">На данный момент имею опыт в вёрстке и базовой подготовке макетов для бэкенда. В частности, верстала адаптивные лендинги и корпоративные личные кабинеты для заказчиков компании, а также выполняла верстку более мелких задач таких как email-письма и отчёты для генерации PDF-файлов.</p>
-            <p>Подготавливая свою работу для бэкенда, я разбиваю макет на составляющие для шаблонизатора, делаю интеграцию JavaScript/jQuery-библиотек и всячески участвую в дальнейшей доработке продукта до конца.</p>
+            <p class="experience__text">В компании spacetab.io имела опыт в вёрстке и базовой подготовке макетов для бэкенда. В частности, верстала адаптивные лендинги и корпоративные личные кабинеты для заказчиков компании, а также выполняла верстку более мелких задач таких как email-письма и отчёты для генерации PDF-файлов.</p>
+            <p>Подготавливая свою работу для бэкенда, я разбивала макет на составляющие для шаблонизатора, делала интеграцию JavaScript/jQuery-библиотек и всячески участвовала в дальнейшей доработке продукта до конца.</p>
           </div>
 
 
@@ -324,7 +352,7 @@
 
   <footer class="footer">
     <div class="footer__container _container">
-        <div class="footer__copyright">Veronika Vikentyeva resume @ All Rights Reserved 2021</div>
+        <div class="footer__copyright">Veronika Vikentyeva СV @ All Rights Reserved 2021</div>
     </div>
   </footer>
 </div> <!--/wrapper-->

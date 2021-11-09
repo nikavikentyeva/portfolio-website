@@ -100,7 +100,6 @@ body {
     scroll-behavior: smooth;
 }
 
-
 ._container {
     width: 100%;
     max-width: 1200px;
@@ -268,6 +267,11 @@ header.fixed {
     fill: var(--main-text);
 }
 
+.sidebar__icon:active {
+    outline: none;
+    fill: var(--main-text);
+}
+
 .sidebar__icon:hover {
     fill: var(--second-text);
 }
@@ -295,6 +299,10 @@ header.fixed {
     line-height: 1.2;
     letter-spacing: .05em;
     transition: all .3s ease;
+}
+
+.sidebar__btn:active {
+    outline: none;
 }
 
 .sidebar__btn:hover {
@@ -380,7 +388,14 @@ header.fixed {
 }
 
 /* -----Skills------------------------------------------------------------------------------*/
-
+._skill {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.skills__soft {
+    margin-top: 30px;
+}
 .skills__subtitle {
     margin-bottom: 10px;
     font-size: 18px;
@@ -471,6 +486,9 @@ header.fixed {
     transition: all .3s ease 0s;
 }
 
+.portfolio__btn:active {
+    outline: none;
+}
 .portfolio__btn:first-child {
     margin-right: 10px;
 }
@@ -483,11 +501,11 @@ header.fixed {
     opacity: 1;
 }
 
-.portfolio__content.click .portfolio__img {
+.portfolio__content.clicked .portfolio__img {
     opacity: .1;
 }
 
-.portfolio__content.click .portfolio__btns {
+.portfolio__content.clicked .portfolio__btns {
     opacity: 1;
 }
 
@@ -528,8 +546,10 @@ header.fixed {
 
 @media (max-width: 1200px) {
     .wrapper {
-        height: 100%;
-        overflow-x: hidden;
+        min-height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
     }
 
     .main {
