@@ -63,17 +63,17 @@ function scrollFunction() {
 
 /* Click to portfolio */
 
-const portfolioContents = document.querySelectorAll(".portfolio__content");
-
-for (let portfolioContent of portfolioContents) {
-    portfolioContent.addEventListener("click", function () {
-        portfolioContent.classList.add("clicked");
-    });
-}
-
-window.addEventListener("click", function (event) {
-    event.stopPropagation();
-    for (let portfolioContent of portfolioContents) {
-        portfolioContent.classList.remove("clicked");
-    }
-});
+// const portfolioContents = document.querySelectorAll(".portfolio__content");
+//
+// for (let portfolioContent of portfolioContents) {
+//     portfolioContent.addEventListener("click", function () {
+//         portfolioContent.classList.add("clicked");
+//     });
+// }
+//
+// window.addEventListener("click", function (event) {
+//     event.stopPropagation();
+//     for (let portfolioContent of portfolioContents) {
+//         portfolioContent.classList.remove("clicked");
+//     }
+// });

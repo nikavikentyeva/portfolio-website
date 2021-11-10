@@ -259,6 +259,9 @@ header.fixed {
 .sidebar__link:hover {
     color: var(--second-text);
 }
+.sidebar__link:active,.sidebar__link:focus,.sidebar__link:visited {
+    outline: none;
+}
 
 .sidebar__icon {
     display: block;
@@ -301,15 +304,13 @@ header.fixed {
     transition: all .3s ease;
 }
 
-.sidebar__btn:active {
-    outline: none;
-}
-
 .sidebar__btn:hover {
     box-shadow: 0 0 10px 4px rgb(0 0 0 / 16%);
 }
-
-/* -----About------------------------------------------------------------------------------*/
+.sidebar__btn:active {
+    outline: none;
+}
+    /* -----About------------------------------------------------------------------------------*/
 
 .section__container {
     padding: 0 15px;
@@ -475,7 +476,25 @@ header.fixed {
     z-index: 2;
     opacity: 0;
 }
+.portfolio__btns-mobile {
+    display: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.portfolio__btn-mobile {
+    border-radius: 37px;
+    line-height: 157%;
+    letter-spacing: 0.2px;
+    padding: 5px 30px;
+    border: 1px solid var(--main-text);
+    color: var(--main-text);
+    transition: all .3s ease 0s;
 
+}
+.portfolio__btn-mobile:first-child {
+    margin-right: 15px;
+}
 .portfolio__btn {
     border-radius: 37px;
     line-height: 157%;
@@ -751,6 +770,18 @@ header.fixed {
 
 }
 
+@media (max-width: 770px) {
+
+    .portfolio__content:hover .portfolio__img{
+        opacity: 1;
+    }
+    .portfolio__btns {
+        display: none;
+    }
+    .portfolio__btns-mobile {
+        display: block;
+    }
+}
 @media (min-width: 770px) {
     .personal__dl-horizontal dt {
         float: left;
