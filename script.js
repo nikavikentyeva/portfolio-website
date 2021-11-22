@@ -3,13 +3,22 @@
 const menuBurger = document.querySelector(".header__burger");
 const nav = document.querySelector(".nav");
 const body = document.querySelector("body");
+const navLi =document.querySelector(".nav__li");
 if (menuBurger) {
-    menuBurger.addEventListener("click", function (e){
+    menuBurger.addEventListener("click", function (e) {
         menuBurger.classList.toggle("active");
         nav.classList.toggle("active");
         body.classList.toggle("lock");
     });
 }
+window.addEventListener("click",function (event) {
+
+    if (event.target !== nav && event.target !== menuBurger) {
+            menuBurger.classList.remove("active");
+            nav.classList.remove("active");
+            body.classList.remove("lock");
+    }
+});
 
 // scroll to sections
 
