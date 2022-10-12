@@ -11,6 +11,7 @@ if (menuBurger) {
         body.classList.toggle("lock");
     });
 }
+
 window.addEventListener("click",function (event) {
 
     if (event.target !== nav && event.target !== menuBurger) {
@@ -62,11 +63,18 @@ window.onscroll = function () {scrollFunction()};
 function scrollFunction() {
     let scrollPos = 10;
     let header = document.querySelector(".header");
+    let links = document.querySelectorAll(".nav__link");
 
     if (document.body.scrollTop > scrollPos || document.documentElement.scrollTop > scrollPos) {
         header.classList.add("fixed");
+        for (let link of links) {
+            link.classList.add("fixed");
+        }
     } else {
         header.classList.remove("fixed");
+        for (let link of links) {
+            link.classList.remove("fixed");
+        }
     }
 }
 
